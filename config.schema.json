@@ -72,8 +72,13 @@
         "description": "Omit a comma seperated list of VIDs"
       },
 
-
-
+      "usecache": {
+        "title": "Vantage Cache VIDS",
+        "type": "boolean",
+        "required": false,
+        "description": "Store a history of all the VIDs for faster load times. If you make frequent changes to your DC file set this to false"
+      },
+      
       "debug": {
         "title": "Debug Logging",
         "type": "boolean",
