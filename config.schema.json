@@ -2,15 +2,85 @@
   "pluginAlias": "Vantage",
   "pluginType": "platform",
   "singular": true,
+  "headerDisplay": "[homebridge-vantage](https://github.com/salimyzadeh/homebridge-legrand_vantage) provides HomeKit support to vantage",
+  "footerDisplay": "See the [homebridge-legrand_vantage developer page](https://github.com/salimyzadeh/homebridge-legrand_vantage) for detailed documentation, including [feature options](https://github.com/salimyzadeh/homebridge-legrand_vantage#feature-options).",
   "schema": {
     "type": "object",
     "properties": {
+
+      "IP": {
+        "title": "Vantage IP Address",
+        "type": "string",
+        "required": true,
+        "placeholder": "192.168.1.10",
+        "description": "IP Address of your vantage controller.",
+        "x-schema-form": {
+           "type": "string"
+         }
+      },
+
       "name": {
         "title": "Name",
         "type": "string",
-        "required": true,
-        "default": "Example Dynamic Platform"
+        "required": false,
+        "placeholder": "Vantage",
+        "description": "The name to assign this plugin for logging purposes. Default: Vantage."
+      },
+
+      "options": {
+        "title": "Feature Options",
+        "type": "array",
+
+        "items": {
+          "type": "string",
+          "title": "Feature Option",
+          "required": false,
+          "description": "Enter only one option per entry. See project page for the complete list of available options.",
+          "placeholder": "e.g. Disable.SerialNumber"
+        }
+      },
+
+      "username": {
+        "type": "string",
+        "title": "Vantage Username",
+        "required": false,
+        "placeholder": "administrator",
+        "description": "Newer versions of vantage require a username (default is administrator)."
+      },
+
+      "password": {
+        "type": "string",
+        "title": "Vantage Password",
+        "required": false,
+        "placeholder": "password",
+        "description": "Newer versions of vantage require a password"
+      },
+      
+      "range": {
+        "type": "string",
+        "title": "VID Range (optional)",
+        "required": false,
+        "placeholder": "1,9999",
+        "description": "Enter a range of VIDs to be read in"
+      },
+      
+      "omit": {
+        "type": "string",
+        "title": "Omit VIDS (optional)",
+        "required": false,
+        "placeholder": "1,2,3,4,5",
+        "description": "Omit a comma seperated list of VIDs"
+      },
+
+
+
+      "debug": {
+        "title": "Debug Logging",
+        "type": "boolean",
+        "required": false,
+        "description": "Logging verbosity for debugging. Default: false."
       }
+
     }
   }
 }
