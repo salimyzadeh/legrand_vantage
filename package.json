@@ -1,6 +1,6 @@
 {
   "private": true,
-  "displayName": "Plugin Name",
+  "displayName": "Vantage",
   "name": "homebridge-vantage",
   "version": "1.0.0",
   "description": "This plugin makes your Legrand Vantage loads accessible in homebridge",
