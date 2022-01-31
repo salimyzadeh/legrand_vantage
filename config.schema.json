@@ -1,7 +1,7 @@
 {
   "pluginAlias": "Vantage",
   "pluginType": "platform",
-  "singular": true,
+  "singular": false,
   "headerDisplay": "[homebridge-vantage](https://github.com/salimyzadeh/homebridge-legrand_vantage) provides HomeKit support to vantage",
   "footerDisplay": "See the [homebridge-legrand_vantage developer page](https://github.com/salimyzadeh/homebridge-legrand_vantage) for detailed documentation, including [feature options](https://github.com/salimyzadeh/homebridge-legrand_vantage#feature-options).",
   "schema": {
